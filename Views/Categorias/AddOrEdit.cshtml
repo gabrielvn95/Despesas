@@ -1,0 +1,48 @@
+﻿@model rastreador_de_despesa.Models.Categoria
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-7">
+        <div class="widget p-5">
+            <form asp-action="AddOrEdit" class="form-layout">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" name="CategoriaId" value="CategoriaId" />
+                
+                <div class="mb-4">
+                    <div class='e-btn-group custom-rbt-group'>
+                        <input type="radio" id="radioleft" name="Tipo" value="Despesa" @(Model.Tipo == "Despesa" ? "checked" : "") />
+                        <label class="e-btn" for="radioleft">Despesa</label>
+                        <input type="radio" id="radiomiddle" name="Tipo" value="Renda" @(Model.Tipo == "Renda" ? "checked" : "") />
+                        <label class="e-btn" for="radiomiddle">Renda</label>
+                    </div>
+                    <span asp-validation-for="Tipo" class="text-danger"></span>
+                </div>
+                
+                <div class="mb-4">
+                    <ejs-textbox id="titulo" placeholder="Titulo" ejs-for="Titulo" floatLabelType="Always"></ejs-textbox>
+                    <span asp-validation-for="Titulo" class="text-danger"></span>
+                </div>
+                
+                <div class="mb-4">
+                    <ejs-textbox id="icone" placeholder="Icone" ejs-for="Icone" floatLabelType="Always"></ejs-textbox>
+                    <span asp-validation-for="Icone" class="text-danger"></span>
+                </div>
+                
+                <div class="d-flex justify-content-end">
+                    <ejs-button id="submit" type="submit" content="Submit" cssClass="e-success"></ejs-button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="mt-3 text-center">
+    <a asp-action="Index" class="btn btn-light">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -286,3 +286,7 @@ C:\Users\gabri\source\repos\rastreador de despesa\bin\Debug\net8.0\runtimes\win\
 C:\Users\gabri\source\repos\rastreador de despesa\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\gabri\source\repos\rastreador de despesa\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\gabri\source\repos\rastreador de despesa\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\gabri\source\repos\rastreador de despesa\bin\Debug\net8.0\Syncfusion.EJ2.dll
+C:\Users\gabri\source\repos\rastreador de despesa\bin\Debug\net8.0\Syncfusion.Licensing.dll
+C:\Users\gabri\source\repos\rastreador de despesa\obj\Debug\net8.0\rastreador de despesa.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gabri\source\repos\rastreador de despesa\obj\Debug\net8.0\rastreador de despesa.sourcelink.json

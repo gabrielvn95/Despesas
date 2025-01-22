@@ -15,6 +15,10 @@ namespace rastreador_de_despesa
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
 
+            //Register Syncfusion license
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NMaF5cXmBCf0x0TXxbf1x1ZF1MYVpbRHFPMyBoS35Rc0ViW35eeHVTRmdeWExy");
+
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

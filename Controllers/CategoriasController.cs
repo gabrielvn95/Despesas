@@ -42,10 +42,13 @@ namespace rastreador_de_despesa.Controllers
             return View(categoria);
         }
 
-        // GET: Categorias/Create
-        public IActionResult Create()
+        // GET: Categorias/AddOrEdit
+        public IActionResult AddOrEdit(int id=0)
         {
+            if (id == 0) 
             return View(new Categoria());
+            else
+                return View(_context.Categorias.Find(id));
         }
 
         // POST: Categorias/Create
@@ -53,63 +56,12 @@ namespace rastreador_de_despesa.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CategoriaId,Titulo,Icone,Tipo")] Categoria categoria)
+        public async Task<IActionResult> AddOrEdit([Bind("CategoriaId,Titulo,Icone,Tipo")] Categoria categoria)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(categoria);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(categoria);
-        }
-
-        // GET: Categorias/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var categoria = await _context.Categorias.FindAsync(id);
-            if (categoria == null)
-            {
-                return NotFound();
-            }
-            return View(categoria);
-        }
-
-        // POST: Categorias/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CategoriaId,Titulo,Icone,Tipo")] Categoria categoria)
-        {
-            if (id != categoria.CategoriaId)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(categoria);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!CategoriaExists(categoria.CategoriaId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
                 return RedirectToAction(nameof(Index));
             }
             return View(categoria);
