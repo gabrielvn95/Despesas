@@ -16,5 +16,14 @@ namespace rastreador_de_despesa.Models
 
         [Column(TypeName = "nvarchar(10)")]
         public string Tipo { get; set; } = "Despesa";
+
+        [NotMapped]
+        public string? TituloComIcone { 
+            get
+            {
+                return this.Icone + " " + this.Titulo;
+            }
+            
+        }
     }
 }

@@ -4,44 +4,44 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="row">
+    <div class="col-md-7">
+        <ejs-grid id="categorias" dataSource="@Model" gridLines="None"
+        allowSorting="true" allowPaging="true">
+        <e-grid-pagesettings PageSize="5"></e-grid-pagesettings>
+            <e-grid-columns>
+                <e-grid-column headerText="Categoria" field="TituloComIcone"></e-grid-column>
+                <e-grid-column headerText="Tipo" template="#typeColumnTemplate" width="150px"></e-grid-column>
+                <e-grid-column headerText="Actions" template="#actionColumnTemplate" width="100px"></e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+    </div>
+    <div class="col-md-5">
+        <div class="widget h-100 d-flex justify-content-center align-items-center" style="background-color: #212b36">
+            <i class="fa-solid fa-shapes fa-2xl"></i>
+        </div>
+    </div>
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Titulo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Icone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tipo)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Titulo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Icone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tipo)
-            </td>
-            <td>
-                <a asp-action="AddOrEdit" asp-route-id="@item.CategoriaId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CategoriaId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CategoriaId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<script id="typeColumnTemplate" type="text/x-template">
+    ${if(Tipo=="Renda")}
+        <span class="badge bg-success">${Tipo}</span>
+    ${else}
+        <span class="badge bg-danger">${Tipo}</span>
+        ${/if}
+</script>
+
+<script id="actionColumnTemplate" type="text/x-template">
+    <div class="d-flex flex-row justify-content-start">
+        <a class="btn btn-sm no-a-decoration" href="/Categorias/AddOrEdit/${CategoriaId}">
+        <i class="fa-solid fa-pen fa-lg"></i>    
+        </a>
+        <form action="/Categorias/Delete/${CategoriaId}" method="post">
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-sm btn-link no-a-decoration"
+            onclick="return confirm(&quot;Tem certeza que deseja deletar ?&quot;)">
+                <i class="fa-solid fa-trash-can fa-lg text-danger"></i>
+                </button>
+            </form>
+        </div>
+</script>
