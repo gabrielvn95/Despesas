@@ -1,7 +1,9 @@
 ﻿@model IEnumerable<rastreador_de_despesa.Models.Categoria>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["PageTitle"] = "Categorias";
+    ViewData["PageActionText"] = "+ Nova Categoria";
+    ViewData["PageActionUrl"] = "/Categorias/AddOrEdit";
 }
 
 <div class="row">
@@ -12,7 +14,7 @@
             <e-grid-columns>
                 <e-grid-column headerText="Categoria" field="TituloComIcone"></e-grid-column>
                 <e-grid-column headerText="Tipo" template="#typeColumnTemplate" width="150px"></e-grid-column>
-                <e-grid-column headerText="Actions" template="#actionColumnTemplate" width="100px"></e-grid-column>
+                <e-grid-column headerText="Ações" template="#actionColumnTemplate" width="100px"></e-grid-column>
             </e-grid-columns>
         </ejs-grid>
     </div>

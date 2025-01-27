@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KFeCcCpy/BpqRb6h+tIXFXs7/+EEjDjssG+BtlB+GJU=",
+  "Hash": "o0fUMzqLKjYVuPmT+jAkkjWWMgbEJuIJuvUDgLbXqWk=",
   "Source": "rastreador de despesa",
   "BasePath": "_content/rastreador de despesa",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z709zp9m9a",
-      "Integrity": "X4BDcsErmxppSyBcGdWzWQPaoTtTNydeLtUHag3yXck=",
+      "Fingerprint": "f5kw7p31fy",
+      "Integrity": "Awn3L9ol/+wxRLkOyo8Pw1QBGLJkZk05XkBk+YTk/zk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -94,11 +94,53 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "61n19gt1b8",
-      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "Fingerprint": "ihz5u0lihh",
+      "Integrity": "5vCGtVKjZfhAx5Gwd4edat1jZa/LwSDBLYwFfTgJbb8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\favicon-16x16.png",
+      "SourceId": "rastreador de despesa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\",
+      "BasePath": "_content/rastreador de despesa",
+      "RelativePath": "favicon-16x16#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5l424mvibk",
+      "Integrity": "uY/AXIILsghiUkIa+mESd9s2BZH56hsTyR0CoKKvrvE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon-16x16.png"
+    },
+    {
+      "Identity": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\favicon-32x32.png",
+      "SourceId": "rastreador de despesa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\",
+      "BasePath": "_content/rastreador de despesa",
+      "RelativePath": "favicon-32x32#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v0m4su8lgd",
+      "Integrity": "f9wXx7Q39IEDSLyiRdJTv2VbpqnaJYYiYFKSMV+4ECk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon-32x32.png"
     },
     {
       "Identity": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\js\\site.js",
@@ -1331,7 +1373,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2539"
+          "Value": "2847"
         },
         {
           "Name": "Content-Type",
@@ -1339,11 +1381,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"X4BDcsErmxppSyBcGdWzWQPaoTtTNydeLtUHag3yXck=\""
+          "Value": "\"Awn3L9ol/+wxRLkOyo8Pw1QBGLJkZk05XkBk+YTk/zk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Jan 2025 20:13:39 GMT"
+          "Value": "Mon, 27 Jan 2025 20:23:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1353,12 +1395,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-X4BDcsErmxppSyBcGdWzWQPaoTtTNydeLtUHag3yXck="
+          "Value": "sha256-Awn3L9ol/+wxRLkOyo8Pw1QBGLJkZk05XkBk+YTk/zk="
         }
       ]
     },
     {
-      "Route": "css/site.z709zp9m9a.css",
+      "Route": "css/site.f5kw7p31fy.css",
       "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1368,7 +1410,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2539"
+          "Value": "2847"
         },
         {
           "Name": "Content-Type",
@@ -1376,11 +1418,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"X4BDcsErmxppSyBcGdWzWQPaoTtTNydeLtUHag3yXck=\""
+          "Value": "\"Awn3L9ol/+wxRLkOyo8Pw1QBGLJkZk05XkBk+YTk/zk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Jan 2025 20:13:39 GMT"
+          "Value": "Mon, 27 Jan 2025 20:23:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1390,7 +1432,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "z709zp9m9a"
+          "Value": "f5kw7p31fy"
         },
         {
           "Name": "label",
@@ -1398,52 +1440,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-X4BDcsErmxppSyBcGdWzWQPaoTtTNydeLtUHag3yXck="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\favicon.ico",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5430"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 12:48:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "61n19gt1b8"
-        },
-        {
-          "Name": "label",
-          "Value": "favicon.ico"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-Awn3L9ol/+wxRLkOyo8Pw1QBGLJkZk05XkBk+YTk/zk="
         }
       ]
     },
@@ -1458,7 +1455,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "15406"
         },
         {
           "Name": "Content-Type",
@@ -1466,11 +1463,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"5vCGtVKjZfhAx5Gwd4edat1jZa/LwSDBLYwFfTgJbb8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 12:48:13 GMT"
+          "Value": "Thu, 23 Jan 2025 12:42:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1480,7 +1477,216 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-5vCGtVKjZfhAx5Gwd4edat1jZa/LwSDBLYwFfTgJbb8="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ihz5u0lihh.ico",
+      "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5vCGtVKjZfhAx5Gwd4edat1jZa/LwSDBLYwFfTgJbb8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 12:42:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ihz5u0lihh"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5vCGtVKjZfhAx5Gwd4edat1jZa/LwSDBLYwFfTgJbb8="
+        }
+      ]
+    },
+    {
+      "Route": "favicon-16x16.5l424mvibk.png",
+      "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\favicon-16x16.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "611"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uY/AXIILsghiUkIa+mESd9s2BZH56hsTyR0CoKKvrvE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 12:42:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5l424mvibk"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon-16x16.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uY/AXIILsghiUkIa+mESd9s2BZH56hsTyR0CoKKvrvE="
+        }
+      ]
+    },
+    {
+      "Route": "favicon-16x16.png",
+      "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\favicon-16x16.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "611"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uY/AXIILsghiUkIa+mESd9s2BZH56hsTyR0CoKKvrvE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 12:42:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uY/AXIILsghiUkIa+mESd9s2BZH56hsTyR0CoKKvrvE="
+        }
+      ]
+    },
+    {
+      "Route": "favicon-32x32.png",
+      "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\favicon-32x32.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1453"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f9wXx7Q39IEDSLyiRdJTv2VbpqnaJYYiYFKSMV+4ECk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 12:42:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f9wXx7Q39IEDSLyiRdJTv2VbpqnaJYYiYFKSMV+4ECk="
+        }
+      ]
+    },
+    {
+      "Route": "favicon-32x32.v0m4su8lgd.png",
+      "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\favicon-32x32.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1453"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f9wXx7Q39IEDSLyiRdJTv2VbpqnaJYYiYFKSMV+4ECk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 12:42:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v0m4su8lgd"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon-32x32.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f9wXx7Q39IEDSLyiRdJTv2VbpqnaJYYiYFKSMV+4ECk="
         }
       ]
     },

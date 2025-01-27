@@ -28,10 +28,21 @@ body {
     font-size: x-large;
 }
 
+.main-content{
+    margin-left: 290px;
+}
+
+/*BreadCrumb*/
+e-breadcrumb a, .e-breadcrumb a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+
 /*Button*/
-.btn:focus, .btn:active{
-    outline:none !important;
-    box-shadow:none;
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
 }
 
 /*Link*/
@@ -132,6 +143,12 @@ body {
     background-color: #fff;
     color: #212b36;
     border: 1px solid #fff;
+}
+
+#Sidebar{
+    background-color: #12161d;
+    border-right: 1px dashed rgba(75,82,85,0.24);
+    padding: 10px 20px;
 }
 
 .widget {

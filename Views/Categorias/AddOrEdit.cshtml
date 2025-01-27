@@ -1,12 +1,13 @@
 ﻿@model rastreador_de_despesa.Models.Categoria
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["PageTitle"] = Model.CategoriaId == 0 ? "Criando uma nova categoria" : "Editar categoria";
+   
 }
 
 <div class="row justify-content-center">
     <div class="col-md-7">
-        <div class="widget p-5">
+        <div class="widget p-5" style="background-color:#212b36">
             <form asp-action="AddOrEdit" class="form-layout">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <input type="hidden" name="CategoriaId" value="@Model.CategoriaId" />
@@ -18,12 +19,11 @@
                         <input type="radio" id="radiomiddle" name="Tipo" value="Renda" checked="@(Model.Tipo=="Renda" )" />
                         <label class="e-btn" for="radiomiddle">Renda</label>
                     </div>
-                    <span asp-validation-for="Tipo" class="text-danger"></span>
                 </div>
                 
                 <div class="mb-4">
                     <ejs-textbox id="titulo" placeholder="Titulo" ejs-for="Titulo" floatLabelType="Always"></ejs-textbox>
-                    <span asp-validation-for="Titulo" class="text-danger"></span>
+                    <span asp-validation-for="Titulo" class="text-danger fs-6" ></span>
                 </div>
                 
                 <div class="mb-4">

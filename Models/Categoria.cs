@@ -9,6 +9,7 @@ namespace rastreador_de_despesa.Models
         public int CategoriaId { get; set; }
 
         [Column(TypeName = "nvarchar(50)")]
+        [Required(ErrorMessage = "Titulo é obrigatorio!")]
         public string Titulo { get; set; }
 
         [Column(TypeName = "nvarchar(5)")]

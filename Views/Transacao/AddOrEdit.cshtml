@@ -1,0 +1,60 @@
+﻿@model rastreador_de_despesa.Models.Transacao
+
+@{
+    ViewData["PageTitle"] = Model.TrasacaoId == 0 ? "Criando uma nova transação" : "Editar transação";
+}
+
+<div class="row">
+    <div class="col-md-7">
+        <div class="widget p-5" style="background-color:#212b36">
+            <form asp-action="AddOrEdit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" name="TrasacaoId" value="@Model.TrasacaoId" />
+                <div class="mb-3">
+                    <ejs-datepicker id="date" ejs-for="Data"
+                     placeholder="Data" floatLabelType="Always"
+                    format="dd-MMM-yy"></ejs-datepicker>
+                </div>
+
+                <div class="mb-3">
+                    <ejs-dropdownlist id="ddlCategoria" ejs-for="CategoriaId"
+                                      dataSource="@ViewBag.Categorias" placeholder="Escolha uma categoria"
+                                      floatLabelType="Always" allowFiltering="true" ignoreAccent="true" filterType="Contains" popupHeight="200px">
+                        <e-dropdownlist-fields value="CategoriaId" text="TituloComIcone"></e-dropdownlist-fields>
+                    </ejs-dropdownlist>
+                    <span asp-validation-for="CategoriaId" class="text-danger fs-6"></span>
+                </div>
+
+                <div class="mb-3">
+                    <ejs-numerictextbox id="quantia" ejs-for="Quantia"
+                    placeholder="Quantia" floatLabelType="Always"
+                    min=0 format="c0"></ejs-numerictextbox>
+                    <span asp-validation-for="Quantia" class="text-danger fs-6"></span>
+                </div>
+
+                <div class="mb-3">
+                   <ejs-textbox id="note" placeholder="Nota" ejs-for="Nota" floatLabelType="Always"
+                   multiline="true"></ejs-textbox>
+                </div>
+
+                <ejs-button id="submit" typeof="submit" content="Submit" cssClass="e-success"></ejs-button>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-md-5">
+        <div class="widget h-100 d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-money-bill-transfer fa-2xl text-white"></i>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary mt-3">Voltar para a lista</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

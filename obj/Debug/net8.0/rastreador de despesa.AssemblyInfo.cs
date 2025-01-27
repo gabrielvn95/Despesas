@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("rastreador de despesa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a05d18a576202ee4f8cbf5a2962aa8618d54d8fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7ed2ea97f9029be10955d964eb5a26479f62bf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("rastreador de despesa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rastreador de despesa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
