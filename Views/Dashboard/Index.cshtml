@@ -5,12 +5,126 @@
     ViewData["Dashboard"] = true;
 }
 
-@*Summary Widgets*@
+@* Summary Widgets *@
 <div class="row mb-4">
-    <div class="d-flex flex-row widget summary income">
-        <div class="d-flex flex-column m-auto py-3">
-            <span class="lead">Total Renda</span>
-            <h1 class="display-6 fw-bold">@ViewBag.TotalRenda</h1>
+    <div class="col-md-4">
+        <div class="d-flex flex-row widget summary income">
+            <div class="d-flex flex-column justify-content-center p-5">
+                <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+            </div>
+            <div class="d-flex flex-column m-auto py-3">
+                <span class="lead">Total Renda</span>
+                <h1 class="display-6 fw-bold">@ViewBag.TotalRenda</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="d-flex flex-row widget summary expense">
+            <div class="d-flex flex-column justify-content-center p-5">
+                <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+            </div>
+            <div class="d-flex flex-column m-auto py-3">
+                <span class="lead">Total Despesas</span>
+                <h1 class="display-6 fw-bold">@ViewBag.TotalDespesa</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="d-flex flex-row widget summary balance">
+            <div class="d-flex flex-column justify-content-center p-5">
+                <i class="fa-solid fa-dollar-sign fa-2xl"></i>
+            </div>
+            <div class="d-flex flex-column m-auto py-3">
+                <span class="lead">Saldo</span>
+                <h1 class="display-6 fw-bold">@ViewBag.Equilibrio</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Gráficos *@
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="widget chart">
+            <div class="title p-4">
+                <h5 class="fw-bold">Despesa e Categorias</h5>
+            </div>
+            <ejs-accumulationchart id="doughnutchart" enableSmartLabels background="#1a222b">
+                <e-accumulation-series-collection>
+                    <e-accumulation-series dataSource="@ViewBag.DoughnutChartData"
+                xName="categoriaTituloComIcone" yName="quantia"
+                    innerRadius="60%" legendShape="Circle"
+                    palettes=@(new string[]{"#0e8d76","#a4b219","#cb9b00","#8a442c","#0454b5","#822690","4c2090","#313e93","#0096ac"})>
+                <e-accumulationseries-datalabel name="formattedQuantia" visible></e-accumulationseries-datalabel>
+                    </e-accumulation-series>
+                </e-accumulation-series-collection>
+                <e-accumulationchart-legendsettings position="Top" toggleVisibility="false">
+                    <e-legendsettings-textstyle color="#fff" size="1rem"></e-legendsettings-textstyle>
+                </e-accumulationchart-legendsettings>
+                <e-accumulationchart-tooltipsettings enable></e-accumulationchart-tooltipsettings>
+            </ejs-accumulationchart>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="widget chart">
+            <div class="p-4">
+                <h5 class="fw-bold">Renda vs Despesa</h5>
+            </div>
+          <ejs-chart id="spline-chart" background="#1a222b"
+          palettes=@(new string[]{"#54ffa9","#ffe91a"})>
+              <e-chart-primaryxaxis valueType="Category">
+                  <e-majorgridlines width="0"></e-majorgridlines>
+                  <e-majorticklines width="0"></e-majorticklines>
+              </e-chart-primaryxaxis>
+              <e-chart-primaryyaxis>
+                    <e-majorgridlines width="1" color="#32414d" dashArray="3,5"></e-majorgridlines>
+                    <e-majorticklines width="0"></e-majorticklines>
+                    <e-linestyle width="0"></e-linestyle>
+              </e-chart-primaryyaxis>
+              <e-chart-chartarea>
+                  <e-chartarea-border width="0"></e-chartarea-border>
+              </e-chart-chartarea>
+              <e-series-collection>
+                  <e-series dataSource="@ViewBag.SplineChartData" xName="dia" width="3"
+                  yName="renda" name="Renda" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline"></e-series>
+                    <e-series dataSource="@ViewBag.SplineChartData" xName="dia" width="3"
+                              yName="despesa" name="Despesa" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Spline"></e-series>
+              </e-series-collection>
+             <e-chart-legendsettings position="Top" alignment="Far" toggleVisibility="false">
+                    <e-legendsettings-textstyle color="#fff" size="1rem"></e-legendsettings-textstyle>
+                </e-chart-legendsettings>
+                <e-chart-tooltipsettings enable shared></e-chart-tooltipsettings>
+          </ejs-chart>
+        </div>
+    </div>
+</div>
+
+@*Transacao recentes *@
+<div class="row">
+    <div class="col-md-6">
+        <div class="widget">
+            <div class="p-4">
+                <h5 class="fw-bold">Transações Recentes</h5>
+            </div>
+            <div class="px-4 pb-4">
+                <ejs-grid id="trasacao-recente"
+                          dataSource="@ViewBag.TransacaoRecente" gridLines="None">
+                <e-grid-columns>
+                    <e-grid-column headerText="Categoria" field="CategoriaTituloComIcone"></e-grid-column>
+                    <e-grid-column headerText="Data" field="Data" type="date" format="dd-MMM-yy"></e-grid-column>
+                    <e-grid-column headerText="Quantia" field="FormatandoQuantia" textAlign="Right"></e-grid-column>
+                </e-grid-columns>
+                </ejs-grid>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="widget h-100">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <span><i class="fa-solid fa-plus fa-2xl"></i>Dispositivo</span>
+            </div>
         </div>
     </div>
 </div>

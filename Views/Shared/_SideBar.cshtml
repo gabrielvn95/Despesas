@@ -2,8 +2,94 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    List<Object> menuItems = new List<Object>();
+
+    menuItems.Add(new
+    {
+        text = "Geral",
+        separator = true
+    });
+
+    menuItems.Add(new
+    {
+        text = "Dashboard",
+        url = "/",
+        iconCss = "fa-solid fa-box",
+    });
+
+    menuItems.Add(new
+    {
+        text = "Categorias",
+        url = "/Categorias",
+        iconCss="fa-solid fa-folder-closed",
+    });
+
+    menuItems.Add(new
+    {
+        text = "Transação",
+        iconCss = "fa-solid fa-arrow-right-arrow-left",
+        url = "/Transacao"
+    });
+   
+    menuItems.Add(new
+    {
+        text = "Extra",
+        separator = true
+    });
+
+    menuItems.Add(new
+    {
+        text = "Reportar",
+        iconCss = "fa-solid fa-chart-simple",
+        url = "#"
+    });
+
+    menuItems.Add(new
+    {
+        text = "Configuração",
+        iconCss = "fa-solid fa-gear",
+        url = "#"
+     
+    });
+
+    
 }
 
-<ejs-sidebar id="Sidebar" width="290px">
+<ejs-sidebar id="Sidebar" width="290px" enableDock dockSize="100px"
+        target=".dock-target" enableGestures="false">
+    <e-content-template>
 
+        <div class="logo-wrapper">
+            <div class="app-logo">
+                <img src="~/logo (1).png" />
+            </div>
+            <div class="w-100">
+
+            </div>
+            <i id="Sidebar-toggler" class="fa-solid "></i>
+        </div>
+
+        <div class="profile-wrapper">
+            <img class="profile-pic" src="~/profile.jpg" />
+            <div class="titles d-flex flex-column ps-3">
+                <h6 class="mb-0">Wallet App</h6>
+                <span class="text-muted">Gabriel vieira</span>
+            </div>
+        </div>
+
+        <ejs-menu id="menu"
+        items="menuItems"
+        orientation="Vertical"
+        hamburgerMode></ejs-menu>
+    </e-content-template>
 </ejs-sidebar>
+
+            <script>
+                document.addEventListener('DOMContentLoaded',function ()
+                {
+                dockBar = document.getElementById('Sidebar').ej2_instances[0];
+                document.getElementById('Sidebar-toggler').onclick = function () {
+                    dockBar.toggle();
+                };
+                });
+            </script>

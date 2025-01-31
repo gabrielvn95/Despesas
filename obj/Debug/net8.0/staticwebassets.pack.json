@@ -253,6 +253,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\logo (1).png",
+      "PackagePath": "staticwebassets\\logo (1).png"
+    },
+    {
+      "Id": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\profile.jpg",
+      "PackagePath": "staticwebassets\\profile.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.rastreador de despesa.props",
       "PackagePath": "build\\rastreador de despesa.props"
     },

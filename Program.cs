@@ -16,7 +16,7 @@ namespace rastreador_de_despesa
             options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
 
             //Register Syncfusion license
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NMaF5cXmBCf0x0TXxbf1x1ZF1MYVpbRHFPMyBoS35Rc0ViW35eeHVTRmdeWExy");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NMaF1cXmhLYVVpR2Nbek54flFAallTVAciSV9jS3tTd0ZjWXdadnFXQ2JYUQ==");
 
 
             var app = builder.Build();

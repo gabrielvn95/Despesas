@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o0fUMzqLKjYVuPmT+jAkkjWWMgbEJuIJuvUDgLbXqWk=",
+  "Hash": "WADXumj8XD14yror6XWiPaLzLw0g9Ruy+TLQPcf5h58=",
   "Source": "rastreador de despesa",
   "BasePath": "_content/rastreador de despesa",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "f5kw7p31fy",
-      "Integrity": "Awn3L9ol/+wxRLkOyo8Pw1QBGLJkZk05XkBk+YTk/zk=",
+      "Fingerprint": "28rdsimfkc",
+      "Integrity": "7vCzOgfNOBXG2SO+8W0pWdBPNjNcwbf7mrXXAoQFlQo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1359,9 +1359,96 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\logo (1).png",
+      "SourceId": "rastreador de despesa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\",
+      "BasePath": "_content/rastreador de despesa",
+      "RelativePath": "logo (1)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f6i4n9kftb",
+      "Integrity": "+Y/T6Xt6t5KpWCO5UGapJ8dIb7FKPQYNSNX6bAmlPF0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo (1).png"
+    },
+    {
+      "Identity": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\profile.jpg",
+      "SourceId": "rastreador de despesa",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\",
+      "BasePath": "_content/rastreador de despesa",
+      "RelativePath": "profile#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e2jiosi7e9",
+      "Integrity": "BhmT9Z1nfQ1Ox831/SjdRQr1sJl++8dQaIU6zDamqRA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\profile.jpg"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/site.28rdsimfkc.css",
+      "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6377"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7vCzOgfNOBXG2SO+8W0pWdBPNjNcwbf7mrXXAoQFlQo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Jan 2025 13:46:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "28rdsimfkc"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7vCzOgfNOBXG2SO+8W0pWdBPNjNcwbf7mrXXAoQFlQo="
+        }
+      ]
+    },
     {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\css\\site.css",
@@ -1373,7 +1460,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2847"
+          "Value": "6377"
         },
         {
           "Name": "Content-Type",
@@ -1381,11 +1468,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Awn3L9ol/+wxRLkOyo8Pw1QBGLJkZk05XkBk+YTk/zk=\""
+          "Value": "\"7vCzOgfNOBXG2SO+8W0pWdBPNjNcwbf7mrXXAoQFlQo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:13 GMT"
+          "Value": "Fri, 31 Jan 2025 13:46:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1395,52 +1482,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Awn3L9ol/+wxRLkOyo8Pw1QBGLJkZk05XkBk+YTk/zk="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.f5kw7p31fy.css",
-      "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2847"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Awn3L9ol/+wxRLkOyo8Pw1QBGLJkZk05XkBk+YTk/zk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 20:23:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "f5kw7p31fy"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Awn3L9ol/+wxRLkOyo8Pw1QBGLJkZk05XkBk+YTk/zk="
+          "Value": "sha256-7vCzOgfNOBXG2SO+8W0pWdBPNjNcwbf7mrXXAoQFlQo="
         }
       ]
     },
@@ -6443,6 +6485,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "logo (1).f6i4n9kftb.png",
+      "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\logo (1).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+Y/T6Xt6t5KpWCO5UGapJ8dIb7FKPQYNSNX6bAmlPF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 21:32:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f6i4n9kftb"
+        },
+        {
+          "Name": "label",
+          "Value": "logo (1).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+Y/T6Xt6t5KpWCO5UGapJ8dIb7FKPQYNSNX6bAmlPF0="
+        }
+      ]
+    },
+    {
+      "Route": "logo (1).png",
+      "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\logo (1).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+Y/T6Xt6t5KpWCO5UGapJ8dIb7FKPQYNSNX6bAmlPF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 21:32:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+Y/T6Xt6t5KpWCO5UGapJ8dIb7FKPQYNSNX6bAmlPF0="
+        }
+      ]
+    },
+    {
+      "Route": "profile.e2jiosi7e9.jpg",
+      "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\profile.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8564378"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BhmT9Z1nfQ1Ox831/SjdRQr1sJl++8dQaIU6zDamqRA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 13:56:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e2jiosi7e9"
+        },
+        {
+          "Name": "label",
+          "Value": "profile.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BhmT9Z1nfQ1Ox831/SjdRQr1sJl++8dQaIU6zDamqRA="
+        }
+      ]
+    },
+    {
+      "Route": "profile.jpg",
+      "AssetFile": "C:\\Users\\gabri\\source\\repos\\rastreador de despesa\\wwwroot\\profile.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8564378"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BhmT9Z1nfQ1Ox831/SjdRQr1sJl++8dQaIU6zDamqRA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 13:56:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BhmT9Z1nfQ1Ox831/SjdRQr1sJl++8dQaIU6zDamqRA="
         }
       ]
     },
