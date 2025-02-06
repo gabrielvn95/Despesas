@@ -16,12 +16,12 @@ namespace rastreador_de_despesa.Controllers
         public async Task<IActionResult> Index()
         {
             //Ultimos 7 dias
-            DateTime StartDate = DateTime.Today.AddDays(-6);  
+            DateTime StartDate = DateTime.Today.AddDays(-6);
             DateTime EndDate = DateTime.Today;
-            
+
             List<Transacao> SelecionarTrasacao = await _context.Transacao
                 .Include(x => x.Categoria)
-                .Where(y => y.Data>= StartDate && y.Data<=EndDate)
+                .Where(y => y.Data >= StartDate && y.Data <= EndDate)
                 .ToListAsync();
 
             //Total Renda
@@ -49,11 +49,11 @@ namespace rastreador_de_despesa.Controllers
                 .GroupBy(j => j.Categoria.CategoriaId)
                 .Select(k => new
                 {
-                    categoriaTituloComIcone = k.First().Categoria.Icone+" "+ k.First().Categoria.Titulo,
+                    categoriaTituloComIcone = k.First().Categoria.Icone + " " + k.First().Categoria.Titulo,
                     quantia = k.Sum(j => j.Quantia),
                     formattedQuantia = k.Sum(j => j.Quantia).ToString("C0"),
                 })
-                .OrderByDescending(l=>l.quantia)
+                .OrderByDescending(l => l.quantia)
                 .ToList();
 
             // soline chart - Renda vs Despesa
